@@ -2,9 +2,9 @@
 
 <h2>🔖Sobre</h2>
 <p>Desafio da Alura para criar um encriptador de textos.
-  <br>Criar a página HTML estilizada e responsiva usando CSS &check
-  <br>Criar a parte lógica do programa usando JS &check
-</p>
+<p> Necessário:
+ <br> :heavy_check_mark: Criar a página HTML estilizada e responsiva usando CSS.
+ <br>:heavy_check_mark: Criar a parte lógica do programa usando JS.
 
 ## 🚀 Tecnologias
 <div>
