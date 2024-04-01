@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root{
+    --fonte-principal: 'Krona One', sans-serif;
+    --fonte-secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: rgb(14, 20, 34);
+    width: 100%;
+}
+
+.body__img {
+    width: 48%;
+    opacity: 50%;
+    display: flex;
+    margin: 0 25%;
+    position: absolute;
+}
+
+.cabecalho__img{
+    width: 5%;
+    margin: 1%;
+}
+
+.container{
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.container__input {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.input_text {
+    padding: 5%;
+    opacity: 50%;
+    border-radius: 20px;
+    font-family: var(--fonte-principal);
+    font-weight: 400;
+    font-size: 1rem;
+    resize: none;
+    width: 29rem;
+    height: 18rem;
+    align-self: center;
+}
+
+.container__informacao{
+    color: white;
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.fa-circle-exclamation {
+    color: white;
+    margin-right: 2%;
+}
+
+.container__button {
+    display: flex;
+    justify-content: center;
+}
+
+.butoes{
+    font-size: 1.2rem;
+    font-weight: 400;
+    border-radius: 14px;
+    padding: 3%;
+    margin: 3% 2%;
+    justify-content: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(14, 20, 34);;
+}
+
+.butoes:hover{
+    font-size: 1.4rem;
+}
+
+.container__sidebar {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.sidebar__input {
+    padding: 5%;
+    opacity: 50%;
+    border-radius: 20px;
+    font-family: var(--fonte-principal);
+    font-size: 1rem;
+    font-weight: 400;
+    resize: none;
+    width: 29rem;
+    height: 18rem;
+    align-self: center;
+}
+
+.sidebar__button {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+
+.sidebar__butao{
+    font-size: 1.2rem;
+    border-radius: 14px;
+    padding: 3%;
+    margin: 3% 2%; 
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(14, 20, 34);
+}
+
+.sidebar__butao:hover {
+    font-size: 1.4rem;
+}
+
+.rodape{
+    padding: 18px;
+    color: white;
+    background-image: linear-gradient(to right, #E04600, #332D2B);
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 400;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+@media (max-width: 1048px) {
+    .cabecalho__img{
+        width: 10%;
+        margin: 2%;
+        position: relative;
+    }
+
+    .body__img {
+        width: 100%;
+        margin: 8% 0;
+    }
+
+    .container{
+        flex-direction: column;
+    }
+
+    .container__input{
+        width: 100%;
+    }
+
+    .container__informacao{
+        font-size: 1.4rem;
+    }
+
+    .butoes{
+        margin: 2%;
+    }
+
+    .input_text{
+        width: 75%;
+    }
+
+    .container__sidebar{
+        width: 100%;
+    }
+
+    .sidebar__input{
+        width: 75%;
+        height: 10rem;
+    }
+
+    .sidebar__button{
+        margin: 0;
+    }
+
+    .sidebar__butao{
+       margin: 2%;
+    }
+
+    .rodape{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .cabecalho__img{
+        margin: 5%;
+        margin-bottom: 8%;
+    }
+
+    .body__img {
+        margin: 15% 0;
+    }
+
+    .input_text{
+        width: 78%;
+    }
+
+    .sidebar__input{
+        width: 78%;
+    }
+
+    .sidebar__butao{
+        margin-top: 3%;
+        margin-bottom: 9%;
+    }
+}
+
+@media (max-width: 500px) {
+    .cabecalho__img{
+        width: 20%;
+        margin: 2%;
+        position: relative;
+    }
+
+    .body__img {
+        display: none;
+    }
+
+    .container__input{
+        margin-top: 0%;
+    }
+
+    .container__sidebar{
+        margin-top: 5%;
+    }
+
+    .container__button{
+        flex-direction: column;
+    }
+
+    .container__informacao{
+        font-size: 1.2rem;
+        margin: 2% 2%;
+    }
+
+    .butoes{
+        margin: 1.5% 6%;
+    }
+
+    .sidebar__input{
+        margin-bottom: 3%;
+    }
+
+    .sidebar__button{
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .sidebar__butao{
+       margin: 1.5% 6%;
+    }
+}
+
+@media (max-width: 375px) {
+    .cabecalho__img{
+        margin: 4%;
+    }
+
+    .container__sidebar{
+        margin-top: 10%;
+    }
+
+    .container__input{
+        margin-top: 5%;
+    }
+
+    .container__informacao{
+        margin: 4% 2%;
+    }
+
+    .butoes{
+        margin: 3% 6%;
+    }
+
+    .sidebar__butao{
+       margin: 3% 6%;
+    }
+}

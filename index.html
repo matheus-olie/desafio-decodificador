@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decodificador</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/5ae190fa9f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <img class="body__img" src="./assets/bombeiro 02.jpg" alt="bombeiro com laptop e um fundo de programação">
+    <header class="cabecalho">
+        <img class="cabecalho__img" src="./assets/bombeiro 01.png" alt="bombeirinho com laptop">
+    </header>
+    <main>
+        <div class="container">
+            <div class="container__input">
+                <textarea type="text" name="input" id="input" class="input_text" placeholder="Digite seu texto"></textarea>
+                <span class="container__informacao">
+                    <i class="fa-solid fa-circle-exclamation"></i>
+                    Apenas letras minúsculas e sem acento.
+                </span>
+
+                <nav class="container__button">
+                    <button onclick="criptografarTexto()" class="butoes">Criptografar</button>
+                    <button onclick="descriptografarTexto()" class="butoes">Descriptografar</button>
+                </nav>
+            </div>
+            <div class="container__sidebar">
+                <textarea type="text" class="sidebar__input" id="sidebar-input" placeholder="Nenhuma mensagem encontrada!"></textarea>
+                <nav class="sidebar__button">
+                    <button onclick="copiarTexto()" id="sidebar-butao" class="sidebar__butao" disabled>Copiar</button>
+                    <button onclick="transferirTexto()" id="sidebar-butaoTransferir" class="sidebar__butao" disabled>Transferir</button>
+                </nav>
+            </div>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>Desenvolvido por Matheus Olie</p>
+    </footer>
+
+    <script src="app.js"></script>
+    
+    
+</body>
+</html>
