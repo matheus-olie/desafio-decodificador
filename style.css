@@ -125,14 +125,16 @@ body {
 }
 
 .rodape{
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 18px;
     color: white;
     background-image: linear-gradient(to right, #E04600, #332D2B);
     text-align: center;
     font-size: 1.2rem;
     font-weight: 400;
-    position: fixed;
-    width: 100%;
+    position: relative;
     bottom: 0;
 }
 
@@ -216,8 +218,8 @@ body {
 
 @media (max-width: 500px) {
     .cabecalho__img{
-        width: 20%;
-        margin: 2%;
+        width: 18%;
+        margin: 1% 2%;
         position: relative;
     }
 
@@ -260,28 +262,33 @@ body {
     }
 }
 
-@media (max-width: 375px) {
+@media (max-width: 375px){
     .cabecalho__img{
-        margin: 4%;
+        margin: 1% 2%;
     }
 
     .container__sidebar{
-        margin-top: 10%;
+        margin-top: 3%;
     }
 
     .container__input{
-        margin-top: 5%;
+        margin-top: 0%;
     }
 
     .container__informacao{
-        margin: 4% 2%;
+        margin: 2% 2%;
+        font-size: 1rem;
     }
 
     .butoes{
-        margin: 3% 6%;
+        margin: 1.5% 6%;
     }
 
     .sidebar__butao{
-       margin: 3% 6%;
+       margin: 1.5% 6%;
+    }
+
+    .sidebar__input{
+        margin-bottom: 0.5%;
     }
 }
